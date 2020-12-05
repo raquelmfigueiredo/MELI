@@ -1,0 +1,28 @@
+.header{
+    background-color: #fff159;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+}
+
+.nav-logo{
+    background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.11.0/mercadolibre/logo__small.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 44px;
+    height: 31px;
+    overflow: hidden;
+    text-indent: -999px;
+    top: 8px;
+    position: absolute;
+    left: 10px;
+    outline: 0;
+}
+
+.navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: transparent;
+    margin: 0;
+    padding: 0;
+}
