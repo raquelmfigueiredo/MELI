@@ -1,0 +1,16 @@
+footer{
+    background-color: #fff;
+}
+
+section{
+    padding-top: 15px;
+    border-top: 1px solid #ededed;
+}
+
+p{ 
+    font-size: 12px;
+    color: #999;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom:5px;
+}
