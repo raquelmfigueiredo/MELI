@@ -10,15 +10,18 @@ import { ProdutoService } from '../services/produto.service';
 })
 export class PaginaOperadorComponent implements OnInit {
 
-  produto: Produto;
+  produto: Produto = new Produto();
   idProduto: number;
   produtoService: ProdutoService;
 
   constructor(
+    
     private router: Router
   ) { }
 
   ngOnInit(): void {
+    window.scroll(0, 0);
+
     this.findProduto();
   }
 
@@ -28,8 +31,16 @@ export class PaginaOperadorComponent implements OnInit {
     .subscribe((resp: Produto) => {
       this.produto = resp;
   });
+
 }
 
+getProduto(id: number) {
+  this.idProduto = id;
+  this.findProduto();
+}
 
+escanear() {
+  this.router.navigate(['/pagina-info']);
+}
 
 }
