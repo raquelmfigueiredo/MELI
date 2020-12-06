@@ -7,10 +7,10 @@
 }
 
 .nav-logo{
-    background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.11.0/mercadolibre/logo__small.png);
+    background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.11.0/mercadolibre/logo-pt__large_plus.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 44px;
+    width: 150px;
     height: 31px;
     overflow: hidden;
     text-indent: -999px;

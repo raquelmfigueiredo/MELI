@@ -1,13 +1,13 @@
-<section class="principal container">
+<section class="principal container p-3">
   <main class="main">
-    <section class="breadcrubs p-2">
+    <section class="breadcrubs p-5">
       <h3 class="text-center">
         Leia o QR Code ou pesquise pelo ID do produto na barra de pesquisa
       </h3>
     </section>
 
     <div
-      class="row mt-15 mb-15 mx-auto d-flex justify-content-center border w-95 h-95 shadow"
+      class="row mt-15 mb-15 mx-auto d-flex justify-content-center border w-95 h-95 shadow p-4"
     >
       <div>
         <p class="text-center mb-4 p-3 font-weight-bold">QR Code do produto</p>
@@ -29,7 +29,7 @@
                       type="search"
                       class="form-control mr-sm-2 text-center"
                       placeholder="Pesquise o ID do produto..."
-                      aria-label="Pesquisa por ID">
+                      aria-label="Pesquisa por ID" [id] = {{}}>
                   </div>
                 </form>
               </div>
