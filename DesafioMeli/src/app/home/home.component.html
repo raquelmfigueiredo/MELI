@@ -7,40 +7,49 @@
     </section>
 
     <div
-      class="row mt-15 mb-15 mx-auto d-flex justify-content-center border w-95 h-95 shadow p-4"
+      class="row mt-15 mb-15 mx-auto d-flex justify-content-center border w-95 h-95 shadow"
     >
-      <div>
-        <p class="text-center mb-4 p-3 font-weight-bold">QR Code do produto</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
 
-        <img
-          width="400"
-          height="400"
-          src="assets/img/qrcode.png"
-          alt="Imagem de QR Code"
-        />
-
-        <div class="d-flex justify-content-center">
-          <div class="row p-3">
-            <div class="col-md-10">
-              <div class="search w-100">
-                <form class="form-inline input-search">
-                  <div class="input-icon">
-                    <input
-                      type="search"
-                      class="form-control mr-sm-2 text-center"
-                      placeholder="Pesquise o ID do produto..."
-                      aria-label="Pesquisa por ID" [id] = {{}}>
+            <p class="text-center mb-4 p-2 font-weight-bold">QR Code do produto</p>
+            
+              <img class="border"
+              width="400"
+              height="400"
+              src="assets/img/qrcode.png"
+              alt="Imagem de QR Code"
+            />
+            
+            <div class="d-flex justify-content-center">
+              <div class="row mt-3 mb-3 ">
+                <div class="col-md-12 p-3">
+                  <div class="search">
+                    <form class="form-inline input-search ">
+                      <div class="input-icon">
+                        <input
+                          type="search"
+                          class="form-control  text-center "
+                          placeholder="Pesquise o ID do produto..."
+                          aria-label="Pesquisa por ID">
+                          <button class="btn shadow">
+                            Pesquisar
+                          </button>
+                      </div>
+                    </form>
                   </div>
-                </form>
+                </div>
+                <!-- <div class="col-md-6 d-flex justify-content-end">
+                  <button class="text-light btn btn-warning btn mr-4 shadow">
+                    Pesquisar
+                  </button> 
+                </div>-->
               </div>
-            </div>
-            <div class="col-md-2 d-flex justify-content-end">
-              <button class="text-light btn btn-warning btn-w-100 mr-4 shadow">
-                Enviar
-              </button>
             </div>
           </div>
         </div>
+       
       </div>
     </div>
   </main>

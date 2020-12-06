@@ -9,9 +9,8 @@ import { ProdutoService } from '../services/produto.service';
 })
 export class PaginaInfoComponent implements OnInit {
 
+  
   produto: Produto;
-  @Input()
-  id: number;
 
   constructor(
     private produtoService: ProdutoService,
@@ -20,10 +19,6 @@ export class PaginaInfoComponent implements OnInit {
   ngOnInit() {
   }
 
-  findProduto() {
-    this.produtoService.getByIdProduto(this.id).subscribe((resp: Produto) => {
-      this.produto = resp;
-    });
-  }
+  
 
 }
