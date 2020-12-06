@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { PaginaVendedorComponent } from './pagina-vendedor/pagina-vendedor.component';
 import { PaginaOperadorComponent } from './pagina-operador/pagina-operador.component';
+import { PaginaInfoComponent } from './pagina-info/pagina-info.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PaginaOperadorComponent } from './pagina-operador/pagina-operador.compo
     NavbarComponent,
     FooterComponent,
     PaginaVendedorComponent,
-    PaginaOperadorComponent
+    PaginaOperadorComponent,
+    PaginaInfoComponent
   ],
   imports: [
     BrowserModule,
