@@ -11,7 +11,7 @@
         <div class=" mb-5 d-flex justify-content-center">
         
           <div class="card  text-white">
-            <img src="assets/img/Celular.jpg"  class="card-img " alt="...">
+            <img src="{{produto.imagem}}"  class="card-img " alt="...">
           </div>
       
         </div>
@@ -40,8 +40,9 @@
                       Informações do Cliente: 
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Smartphone Sansung S10</li>
-                      <li class="list-group-item">Motivo da devolução: avaria</li>
+                      <li class="list-group-item">{{produto.nome}};
+                      <li class="list-group-item">{{produto.categoria}}</li>
+                      <li class="list-group-item">{{produto.marca}}</li>
                       <li class="list-group-item">Data da devolução: 05/12/2020</li>
                       <li class="list-group-item">Vendedor: Antônio Mariano</li>
                     </ul>

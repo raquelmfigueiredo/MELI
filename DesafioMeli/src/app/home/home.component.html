@@ -27,15 +27,16 @@
                   <div class="input-icon">
                     <input
                       type="search"
-                      class="form-control mr-sm-2 text-center"
-                      placeholder="Pesquise o ID do produto..."
-                      aria-label="Pesquisa por ID" [id] = {{}}>
+                      placeholder="Pesquise os produtos"
+                      name="idProduto"
+                      [(ngModel)]="idProduto"
+                    />
                   </div>
                 </form>
               </div>
             </div>
             <div class="col-md-2 d-flex justify-content-end">
-              <button class="text-light btn btn-warning btn-w-100 mr-4 shadow">
+              <button class="btn" type="submit" (click)="findProduto()">
                 Enviar
               </button>
             </div>
