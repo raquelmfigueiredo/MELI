@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-
-import { PaginaVendedorComponent } from './pagina-vendedor/pagina-vendedor.component';
 import { PaginaOperadorComponent } from './pagina-operador/pagina-operador.component';
 import { PaginaInfoComponent } from './pagina-info/pagina-info.component';
 
@@ -17,9 +15,7 @@ import { PaginaInfoComponent } from './pagina-info/pagina-info.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    PaginaVendedorComponent,
-    PaginaOperadorComponent,
-    PaginaInfoComponent
+    PaginaOperadorComponent
   ],
   imports: [
     BrowserModule,
