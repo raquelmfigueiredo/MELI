@@ -1,83 +1,60 @@
 <div class="principal container-fluid">
-
   <div class="row d-flex justify-content align-items-center">
-
-    <div class="col-md-6 justify-content-center border-right h-100 w-100">
-
-      <div class="container justify-content-center mt-5 mb-5 p-10">
-
-        <h2 class="text-center mt-5 mb-5 text-muted">Foto do Produto</h2>
-
-        <div class=" mb-5 d-flex justify-content-center">
-        
-          <div class="card  text-white">
-            <img src="{{produto.imagem}}"  class="card-img " alt="...">
-          </div>
-      
-        </div>
-
-        <div class="text-center">
-          <img src="assets/img/qrcode.png" class="card-img-top" alt="...">
-        </div>
-
-      </div>
-  </div>
-
-  <!--Fim do Primeiro Formulario-->
-    <div class="col-md-6  justify-content-center h-100 w-100">
-
-    <div class="container justify-content-center mt-5 mb-5 p-3">
-
-          <div class="mb-5 d-flex justify-content-center">
-            
-              <div >
-                <h2 class="text-center mt-5 mb-5 text-muted ">Informações do Produto</h2>
-
-                <div class="container p-3">
-
-                  <div class="card" style="width: 25rem;">
-                    <div class="card-header">
-                      Informações do Cliente: 
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">{{produto.nome}}</li>
-                      <li class="list-group-item">{{produto.categoria}}</li>
-                      <li class="list-group-item">{{produto.marca}}</li>
-                      <li class="list-group-item">Data da devolução: 05/12/2020</li>
-                      <li class="list-group-item">Vendedor: Antônio Mariano</li>
-                    </ul>
-                  </div>
-
-                </div>
-               
-                <div class="container p-3">
-
-                  <div class="card" style="width: 25rem;">
-                    <div class="card-header">
-                      Informações do Vendedor: 
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Smartphone Sansung S10</li>
-                      <li class="list-group-item">Motivo da devolução: avaria</li>
-                      <li class="list-group-item">Data da devolução: 05/12/2020</li>
-                      <li class="list-group-item">Reciclagem</li>
-                    </ul>
-                  </div>
-
-
-                </div>
-                
   
-                <div class="d-flex justify-content-center p-3">
-                  <button class="btn btn-outline-dark w-30" (click)="escanear()">Escanear</button>
-                </div>
-              </div>
-            
+    <div class="container p-3">
+      <div class="row mt-2">
+        <div
+          class="col-md-8 col-12 mx-auto d-flex justify-content-center border w-100 shadow"
+        >
+          <img
+            class="img-fluid"
+            src="{{ produto.imagemProduto }}"
+            alt="Imagem do produto"
+          />
+        </div>
+    
+        <div class="col-md-4 col-12 pl-md-2 px-0">
+          <div class="bg-white shadow w-100 p-5 border">
+            <h3>
+              Preço:
+              <br /><br />
+              <span class="text-success">
+                {{
+                  produto.precoProduto.toLocaleString("pt-br", {
+                    style: "currency",
+                    currency: "BRL"
+                  })
+                }}</span
+              >
+              à vista
+            </h3>
+            <br />
+            <p class="">{{ produto.nomeProduto }}</p>
+            <div>
+              <small class="text-muted">Quantidade em estoque: </small
+              >{{ produto.estoqueProduto }}
+            </div>
+            <small class="text-muted">Marca: {{ produto.marcaProduto }}</small>
+          </div>
+    
+          <div class="p-2 mt-3">
+            <button
+            (click)="escanear()"
+              class="btn btn-lg  w-100 shadow p-2"
+              routerLink="/carrinho"
+              role="button"
+            >
+              Escanear
+            </button>
+          </div>
+          <div class="p-2">
+           
           </div>
         </div>
-
       </div>
-      
+    </div>
+
+              
+           
   </div>
 </div>
-
