@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute} from '@angular/router';
 import { Produto } from '../model/produto';
 import { ProdutoService } from '../services/produto.service';
 
@@ -11,20 +11,24 @@ import { ProdutoService } from '../services/produto.service';
 export class PaginaOperadorComponent implements OnInit {
 
   produto: Produto;
-  idProduto: number;
-  produtoService: ProdutoService;
+  id: number;
 
   constructor(
-    private router: Router
+    private router: ActivatedRoute,
+    private produtoService: ProdutoService
   ) { }
 
-  ngOnInit(): void {
-    this.findProduto();
+  ngOnInit(){
+    this.router.params.subscribe(params =>{
+      this.id = params['idProduto'];
+      this.findProduto();
+    })
   }
+ 
 
   findProduto() {
     this.produtoService
-    .getByIdProduto(this.idProduto)
+    .getByIdProduto(3)
     .subscribe((resp: Produto) => {
       this.produto = resp;
   });

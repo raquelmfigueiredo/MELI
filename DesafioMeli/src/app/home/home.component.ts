@@ -11,7 +11,7 @@ import { ProdutoService } from '../services/produto.service';
 })
 export class HomeComponent implements OnInit {
   
-  produto: Produto;
+  // produto: Produto;
   idProduto: number;
   
   constructor(
@@ -23,12 +23,8 @@ export class HomeComponent implements OnInit {
   }
 
   findProduto() {
-      this.router.navigate(['/produto']);
-      this.produtoService
-      .getByIdProduto(this.idProduto)
-      .subscribe((resp: Produto) => {
-        this.produto = resp;
-    });
+      this.router.navigate(['/produto', this.idProduto]);
+ 
   }
 
 }

@@ -14,7 +14,7 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'produto',
+    path: 'produto/:id',
     component: PaginaOperadorComponent,
   }
 ];
