@@ -4,6 +4,7 @@
     justify-content: flex-end;
     -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
     box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+    height: 50px;
 }
 
 .nav-logo{
@@ -20,9 +21,10 @@
     outline: 0;
 }
 
-.navbar-toggler {
+/* .navbar-toggler {
     color: rgba(0,0,0,.5);
     border-color: transparent;
     margin: 0;
     padding: 0;
-}
+} */
+

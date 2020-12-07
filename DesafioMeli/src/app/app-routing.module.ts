@@ -19,7 +19,7 @@ const routes: Routes = [
     component: PaginaOperadorComponent,
   },
   {
-    path: 'pagina-info',
+    path: 'pagina-info/:id',
     component: PaginaInfoComponent,
   }
 ];

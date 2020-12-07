@@ -33,9 +33,10 @@
                           class="form-control  text-center "
                           placeholder="Pesquise o ID do produto..."
                           aria-label="Pesquisa por ID"
-                          [(ngModdel)]='idProduto'>
-                          <button class="btn shadow">
-                            Escanear
+                          name="idProduto"
+                          [(ngModel)]='idProduto'>
+                          <button class="btn shadow" (click)='findProduto()'>
+                            Pesquisar
                           </button>
                       </div>
                     </form>

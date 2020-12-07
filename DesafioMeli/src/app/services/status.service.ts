@@ -8,7 +8,7 @@ export class StatusService {
   constructor(private http: HttpClient) {}
 
   
-  getByIdProduto(id: number) {
+  getByIdStatus(id: number) {
     return this.http.get(
       `http://localhost:8080/status/${id}`
     );
